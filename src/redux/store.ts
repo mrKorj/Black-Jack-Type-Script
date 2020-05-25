@@ -102,9 +102,7 @@ const reducer = (state = initialStore, action: IAction) => {
         case STAND: {
             const dealer = state.dealer.concat(state.stack.pop() as number)
             const sum = dealer.reduce((a, b) => a + b, 0)
-            setTimeout(() => {
 
-            }, 1000)
             for (let i = sum; i < 17; i++) {
                 dealer.push(state.stack.pop() as number)
                 i = dealer.reduce((a, b) => a + b, 0)
