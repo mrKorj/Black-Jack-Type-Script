@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.plr2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.ml5 {
+  margin-left: 18%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  background-color: white;
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 1rem;
+  -webkit-animation: scale-up-center .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.card p {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.card-table {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.card-header {
+  height: 220px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.game-over {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 26px;
+  text-shadow: 1px 1px 3px #fff;
+  color: #fff;
+  -webkit-animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation-delay: 1s;
+  animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 1s;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
 }
